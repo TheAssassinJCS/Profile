@@ -132,8 +132,6 @@ section img#mountains_front {
 }
 
 /* ----------------------------- END OF SECTION ------------------ */
-
-
 .sec {
     position: relative;
     padding: 100px;
@@ -151,6 +149,26 @@ section img#mountains_front {
 }
 
 .sec p {
+    font-size: 1.3em;
+    color: #fff; 
+}
+
+.sec2 {
+    padding: 100px;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background-image: url('../img/starBack.png');
+    width: 100%;
+}
+
+.sec2 h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;  
+}
+
+.sec2 p {
     font-size: 1.3em;
     color: #fff; 
 }
