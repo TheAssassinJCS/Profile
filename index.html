@@ -17,8 +17,8 @@
     </header>
 
     <section>
-        <img src="img/Stars.jpg" id="stars" alt="stars" />
-        <img src="" id="moon" alt="moon" />
+        <img src="img/Stars.jpg" id="stars" class="stars-class" alt="stars"/>
+        <img src="img/Stars.jpg" id="stars2" class="bigHidden" alt="hidden stars"/>
         <img src="img/Back Piece.png" id="mountains_behind" alt="mountains_behind" />
         <h2 id="text">I'm Jacobus </h2>
         <a href="#" id="btn">Explore</a>
@@ -27,13 +27,13 @@
 
     <div class="sec" id="sec" style="background-image: url(img/starBack.png);">
         <h2 id="about">About Me:</h2>
-        <p style="font-size: 2rem; font-family: serif; text-align: center;">
+        <p>
             I am a Jacobus Simpson and a software developer. <br>
         </p>
         
         <br>
 
-        <ul style="color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 1.3em">
+        <ul>
             <li>My journey started in 2017 and learned the Delphi programming language.</li>
             <li>Towards the end of 2017 I learned about Unity and C#. Because I like gaming I got interested in game design with unity. I learned with Brackey's on youtube about unity and game creation</li>
             <li>Through the year of 2018 I created a few game projects.</li>
@@ -49,10 +49,9 @@
             <input type="radio" name="slider" id="s1" checked>
             <input type="radio" name="slider" id="s2">
             <input type="radio" name="slider" id="s3">
-            <input type="radio" name="slider" id="s4">
-            <input type="radio" name="slider" id="s5">
-    
+
             <div class="cards">
+                
                 <label for="s1" id="slide1">
                   <div class="card">
                     <div class="image">
@@ -66,18 +65,11 @@
     
                     <div class="infos">
                         <span class="name">NIKE1</span>
-                        <span class="lorem">ekwkhbfiudsbfuidsbn</span>
-    
-                        <div class="actions">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-bookmark"></i>
-                            <i class="fa-solid fa-share-nodes"></i>
-                        </div>
+                        <span class="lorem">ekwk hbf iu dsbfu ids bn</span>
                     </div>
                   </div>  
                 </label>
-    
+
                 <label for="s2" id="slide2">
                     <div class="card">
                       <div class="image">
@@ -91,18 +83,11 @@
     
                       <div class="infos">
                           <span class="name">NIKE2</span>
-                          <span class="lorem">ekwkhbfiudsbfuidsbn</span>
-    
-                          <div class="actions">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                              <i class="fa-regular fa-heart"></i>
-                              <i class="fa-regular fa-bookmark"></i>
-                              <i class="fa-solid fa-share-nodes"></i>
-                          </div>
+                          <span class="lorem">ekwkhbfi udsbfui dsbn</span>
                       </div>
                     </div>  
                   </label>
-    
+                  
                   <label for="s3" id="slide3">
                     <div class="card">
                       <div class="image">
@@ -127,58 +112,8 @@
                       </div>
                     </div>  
                   </label>
-    
-                  <label for="s4" id="slide4">
-                    <div class="card">
-                      <div class="image">
-                          <img src="img/ProfileImg_Test-modified.png" alt="nike4 Img">
-                          <div class="dots">
-                              <div></div>
-                              <div></div>
-                              <div></div>
-                          </div>
-                      </div>
-    
-                      <div class="infos">
-                          <span class="name">NIKE4</span>
-                          <span class="lorem">ekwkhbfiudsbfuidsbn</span>
-    
-                          <div class="actions">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                              <i class="fa-regular fa-heart"></i>
-                              <i class="fa-regular fa-bookmark"></i>
-                              <i class="fa-solid fa-share-nodes"></i>
-                          </div>
-                      </div>
-                    </div>  
-                  </label>
-    
-                  <label for="s5" id="slide5">
-                    <div class="card">
-                      <div class="image">
-                          <img src="img/ProfileImg_Test-modified.png Piece.png" alt="nike5 Img">
-                          <div class="dots">
-                              <div></div>
-                              <div></div>
-                              <div></div>
-                          </div>
-                      </div>
-    
-                      <div class="infos">
-                          <span class="name">NIKE5</span>
-                          <span class="lorem">ekwkhbfiudsbfuidsbn</span>
-    
-                          <div class="actions">
-                              <i class="fa-solid fa-cart-shopping"></i>
-                              <i class="fa-regular fa-heart"></i>
-                              <i class="fa-regular fa-bookmark"></i>
-                              <i class="fa-solid fa-share-nodes"></i>
-                          </div>
-                      </div>
-                    </div>  
-                  </label>
-    
-            </div>
+                  
+            </div> 
         </div>
     </div>
 
@@ -230,7 +165,6 @@
 
     <script>
         let stars = document.getElementById('stars');
-        let moon = document.getElementById('moon');
         let mountains_behind = document.getElementById('mountains_behind');
         let mountains_front = document.getElementById('mountains_front');
         let text = document.getElementById('text');
@@ -243,9 +177,8 @@
 
         window.addEventListener('scroll', ()=> {
             let value = window.scrollY;
-            console.log(value)
+            console.log(stars)
             stars.style.left = value * 0.25 + 'px';
-            moon.style.top = value * 1.05 + 'px';
             mountains_behind.style.top = value * 0.5 + 'px';
             mountains_front.style.top = value * 0 + 'px';
             text.style.marginTop = -value * 1 + 'px';
