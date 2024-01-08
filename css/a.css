@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 body {
     min-height: 100vh;
@@ -400,8 +400,7 @@ section img#mountains_front {
 
 /* ------------------------ FOOTER ------------------- */
 .sec2 {
-    padding: 100px;
-    align-items: center;
+    padding: 4rem;
     text-align: center;
     position: relative;
     background-image: url('../img/starBack.png');
@@ -413,12 +412,64 @@ section img#mountains_front {
     margin-bottom: 10px;
     color: #fff;  
 }
-
-.sec2 p {
-    font-size: 1.3em;
-    color: #fff; 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 0 20rem;
+    width: 100%;
+}
+form label {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px;
 }
 
+form input {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: slategray;
+    font-size: 1.3rem;
+    color: white;
+    margin: 3px;
+    padding: 10px
+}
+form input::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+form textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: slategray;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 10px;
+}
+form textarea::placeholder {
+    padding: 10px;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-btn{
+    font-size: xx-large;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1.5px solid purple;
+    color: white;
+    background-color: gray;
+    margin: 20px 20rem;
+}
+.form-btn:focus {
+    background-color: #2b1055;
+    border-color: white;
+}
 .bigHidden {
     display: none;
 }

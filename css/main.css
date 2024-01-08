@@ -6,12 +6,12 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
-
 }
 body {
     min-height: 100vh;
     overflow-x: hidden;
     background: linear-gradient(#2b1055, #7597de);
+    overflow-x: hidden;
 }
 
  /* ------------------------------- HEADER SECTION --------------------------- */
@@ -166,6 +166,10 @@ section img#mountains_front {
     color: white; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
     font-size: 1.3em;
+}
+.sec ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* ----------------------- The Card Grid -------------------- */
@@ -400,9 +404,9 @@ section img#mountains_front {
 
 /* ------------------------ FOOTER ------------------- */
 .sec2 {
-    padding: 100px;
-    align-items: center;
+    padding: 4rem;
     text-align: center;
+    align-items: center;
     position: relative;
     background-image: url('../img/starBack.png');
     width: 100%;
@@ -413,12 +417,71 @@ section img#mountains_front {
     margin-bottom: 10px;
     color: #fff;  
 }
-
-.sec2 p {
-    font-size: 1.3em;
-    color: #fff; 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    text-align: left;
+    align-items: center;
+    padding: 0 20rem;
+    width: 100%;
+}
+form label {
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 10px;
+    box-sizing: none;
 }
 
+form input {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: slategray;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: 10px;
+    box-sizing: none;
+    width: 40vw;
+}
+form input::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: slategray;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    padding: 10px;
+    resize: none;
+    width: 40vw;
+}
+form textarea::placeholder {
+    color: white;
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form-btn{
+    font-size: xx-large;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1.5px solid purple;
+    color: white;
+    background-color: gray;
+    margin: 20px 20rem;
+    box-sizing: none;
+}
+.form-btn:focus {
+    background-color: #2b1055;
+    border-color: white;
+}
 .bigHidden {
     display: none;
 }
@@ -427,6 +490,19 @@ section img#mountains_front {
 }
 
 /* ------------------- MEDIA QUERYS START HERE --------- */
+
+@media (max-width: 1000px) {
+    .card {
+        width: 290px;
+        height: 354px;
+    }
+    form input {
+        width: 55vw;
+    }
+    form textarea {
+        width: 55vw;
+    }
+}
 
 @media (max-width: 768px) {
 
@@ -506,6 +582,38 @@ section img#mountains_front {
     .lang-img{
         width: 30px;
         height: 30px;
+    }
+    /* MEDIA ------- FORM */
+    form {
+        width: 100%;
+        align-items: center;
+        padding: 5px;
+    }
+    form label {
+        font-size: 1.2rem;
+        margin: 5px;
+    }
+    form input {
+        font-size: 1.1rem;
+        width: 100%;
+        padding: 5px;
+    }
+    form input::placeholder {
+        font-size: 1.1rem;
+        padding: 5px;
+    }
+    form textarea {
+        font-size: 1.1rem;
+        padding: 5px;
+        width: 100%;
+    }
+    form textarea::placeholder {
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    .form-btn{
+        font-size: x-large;
+        margin: 15px 15rem;
     }
 }
 
