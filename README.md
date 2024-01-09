@@ -8,4 +8,4 @@ https://theassassinjcs.github.io/Profile/
 
 # Description
 
-Main Details will come here
+Main Details will come here soon.tm
