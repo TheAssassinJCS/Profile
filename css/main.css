@@ -489,6 +489,21 @@ form textarea::placeholder {
     src: url('../img/Stars.jpg');
 }
 
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+}
+.footer-links-item {
+    height: 70px;
+    width: 70px;
+    margin: 0 20px;
+}
+
 /* ------------------- MEDIA QUERYS START HERE --------- */
 
 @media (max-width: 1000px) {
@@ -615,6 +630,23 @@ form textarea::placeholder {
         font-size: x-large;
         margin: 15px 15rem;
     }
+
+    .footer-links{
+        background-color: #5d6367b2;
+        height: 65px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .footer-links-item {
+        height: 60px;
+        width: 60px;
+        margin: 0 5px;
+    }
 }
 
 @media (max-width: 300px)
@@ -648,5 +680,11 @@ form textarea::placeholder {
     akjsdasd */
     .card-footer {
         font-size: small;
+    }
+
+    .footer-links-item {
+        height: 100px;
+        width: 100px;
+        margin: 0 10px;
     }
 }
