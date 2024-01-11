@@ -9,6 +9,7 @@ https://theassassinjcs.github.io/Profile/
 # Description
 
 Main Details will come here soon.tm
+Here i will discuss some details about myself.
 
 # Languages:
 
