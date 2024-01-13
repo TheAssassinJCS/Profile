@@ -8,7 +8,6 @@ let header = document.querySelector('header');
 let homeBtn = document.getElementById('homebtn');
 let aboutBtn = document.getElementById('aboutbtn');
 let contactBtn = document.getElementById('contactbtn');
-let form = document.getElementById('form');
 
 window.addEventListener('scroll', ()=> {
     let value = window.scrollY;
