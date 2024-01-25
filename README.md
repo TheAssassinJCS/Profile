@@ -6,6 +6,8 @@ This Contains html, css, inline script javascript code since Github pages only h
 # Link
 https://theassassinjcs.github.io/Profile/
 
+# Description
+
 # Languages:
 
 <img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" />
